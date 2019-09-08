@@ -7,7 +7,7 @@ Solution
 import random
 x = True
 y = False
-count = 0
+count = 1
 while x:
     user = int(input("Enter the number from 1 to 9 "))
     rand = random.randint(1,10)
