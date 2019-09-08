@@ -33,3 +33,4 @@ for elem in x:
         div.append(elem)
     else:
         pass
+print(divi(div),f"of the number {number}",isare(div),":",div)
