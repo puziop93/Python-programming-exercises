@@ -18,11 +18,13 @@ def divi(y):
         y = 'Divisor'
     return y
 
-def naturalNumber(help_text = "Enter the natural number "):
-    n = 0
-    while n<1:
-        print("It is not the natural number. Try again.")
-        n = int(input(help_text))
+def naturalNumber():
+    n = int(input("Enter the natural number "))
+    if n <1:
+        print(f"It is not the natural number. Try again.")
+        n = int(input("Enter the natural number "))
+    else:
+        n = n
     return n
 
 number = naturalNumber()
