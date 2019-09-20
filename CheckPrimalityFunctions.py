@@ -9,8 +9,6 @@ def num():
     if n <2:
         print(f"Number {n} is neither prime nor composite")
         n = int(input("Give me a number "))
-    else:
-        n = n
     return n
 
 number = num()
