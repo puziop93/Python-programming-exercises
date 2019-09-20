@@ -42,10 +42,11 @@ password \nPress a (weak password) if you want to have a specific word in your p
     if choose.lower() == "b":
         spec = string.punctuation
         upper = string.ascii_uppercase
+        lower = string.ascii_lowercase  
         number = string.digits
         swap = string.capwords
-        gen2 = spec+upper+number
-        print("Password was created for you. It is: ",mixstring_repeat(gen2))
+        gen2 = spec+upper+number+lower
+        print("Password was created for you. It is: ",mixstring_norepeat(gen2))
 
     again = input("If you want to generate new password, press 'Y/N'\n")
     if again.lower() == "y": pass
